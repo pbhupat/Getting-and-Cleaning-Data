@@ -1,4 +1,4 @@
-library(dplyr)
+library(plyr)
 # Train set
 x_train <- read.table("/Pranjali R/UCI HAR Dataset/train/X_train.txt")
 y_train <- read.table("/Pranjali R/UCI HAR Dataset/train/y_train.txt")
