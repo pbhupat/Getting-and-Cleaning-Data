@@ -21,19 +21,6 @@ sub_data <- rbind(sub_train,sub_test)
 main_data <- cbind(x_data,y_data,sub_data)
 
 #4 labelling the dataset
-features <- features %>%
-        mutate(featureName = gsub("\\(\\)", "", featureName),          
-               featureName = gsub("-", "", featureName),               
-               featureName = sub("mean", "Mean", featureName),         
-               featureName = sub("std", "StDev", featureName),         
-               featureName = sub("^t", "Time", featureName),           
-               featureName = sub("^f", "Freq", featureName),           
-               featureName = sub("BodyBody", "Body", featureName),     
-               featureName = sub("Acc", "Accelerometer", featureName), 
-               featureName = sub("Gyro", "Gyroscope", featureName),    
-               featureName = sub("Grav", "Gravity", featureName),      
-               featureName = sub("Mag", "Magnitude", featureName))     
-
 colnames(main_data) <- c("subject", features[, 2], "activity")
 
 #2 Extracts measurements on the mean and standard deviation 
