@@ -16,4 +16,84 @@ x_train, y_train, x_test, y_test, sub_train and sub_test contain the data from t
 x_data, y_data and sub_data merge the previous datasets.
 main_data is the dataset that is formed by merging x_data,y_data and sub_data for further analysis.
 
-features,activities contains the correct names for the x_data dataset, which are applied to the column names stored in
+Uses descriptive activity names to name the activities in the data set
+In this step, the script reads the file activity_labels.txt, and applies descriptive activity names to name the activities in the data set, namely:
+
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+Appropriately labels the data set with descriptive variable names.
+The script properly labels the dataset with descriptive names: all feature names and activity names are converted to , 
+underscores and brackets ("(", ")") are removed.
+
+Names of the attributes corresponds to:
+
+"tbodyacc-mean-x"
+"tbodyacc-mean-y"
+"tbodyacc-mean-z"
+"tbodyacc-std-x"
+"tbodyacc-std-y"
+"tbodyacc-std-z"
+"tgravityacc-mean-x"
+"tgravityacc-mean-y"
+"tgravityacc-mean-z"
+"tgravityacc-std-x"
+"tgravityacc-std-y"
+"tgravityacc-std-z"
+"tbodyaccjerk-mean-x"
+"tbodyaccjerk-mean-y"
+"tbodyaccjerk-mean-z"
+"tbodyaccjerk-std-x"
+"tbodyaccjerk-std-y"
+"tbodyaccjerk-std-z"
+"tbodygyro-mean-x"
+"tbodygyro-mean-y"
+"tbodygyro-mean-z"
+"tbodygyro-std-y"
+"tbodygyro-std-z"
+"tbodygyrojerk-mean-x"
+"tbodygyrojerk-mean-y"
+"tbodygyrojerk-mean-z"
+"tbodygyrojerk-std-x"
+"tbodygyrojerk-std-y"
+"tbodygyrojerk-std-z"
+"tbodyaccmag-mean"
+"tbodyaccmag-std"
+"tgravityaccmag-mean"
+"tgravityaccmag-std"
+"tbodyaccjerkmag-mean"
+"tbodyaccjerkmag-std"
+"tbodygyromag-mean"
+"tbodygyromag-std"
+"tbodygyrojerkmag-mean"
+"tbodygyrojerkmag-std"
+"fbodyacc-mean-x"
+"fbodyacc-mean-y"
+"fbodyacc-mean-z"
+"fbodyacc-std-x"
+"fbodyacc-std-y"
+"fbodyacc-std-z"
+"fbodyaccjerk-mean-x"
+"fbodyaccjerk-mean-y"
+"fbodyaccjerk-mean-z"
+"fbodyaccjerk-std-x"
+"fbodyaccjerk-std-y"
+"fbodyaccjerk-std-z"
+"fbodygyro-mean-x"
+"fbodygyro-mean-y"
+"fbodygyro-mean-z"
+"fbodygyro-std-x"
+"fbodygyro-std-y"
+"fbodygyro-std-z"
+"fbodyaccmag-mean"
+"fbodyaccmag-std"
+"fbodybodyaccjerkmag-mean"
+"fbodybodyaccjerkmag-std"
+"fbodybodygyromag-mean"
+"fbodybodygyromag-std"
+"fbodybodygyrojerkmag-mean"
+"fbodybodygyrojerkmag-std"
+
