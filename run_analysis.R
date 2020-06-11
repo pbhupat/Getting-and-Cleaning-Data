@@ -36,4 +36,4 @@ main_data$activity <- factor(main_data$activity, activities[,1],
 avg_data <- ddply(main_data, .(subject, activity),
                   function(x) colMeans(x[, 1:66]))
 
-write.table(avg_data, file="tidy_data.txt", row.names = FALSE)
+write.table(avg_data, file="tidy.txt", row.names = FALSE)
